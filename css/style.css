@@ -65,6 +65,11 @@ a {
     color: var(--main-bg-color)
 }
 
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 /******** Header **********/
 .navbar {
     display: flex;
@@ -117,6 +122,8 @@ a {
     font-size: 18px;
     font-weight: 700;
     border: 1px solid #F2F2F2;
+    border-right: 0;
+    border-left: 0;
     outline: none;
     height: 100%;
     box-sizing: border-box;
@@ -127,11 +134,11 @@ a {
 }
 
 .location-icon {
-    padding: 15px 20px;
+    padding: 15px 18px;
     background-color:#F2F2F2;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     color: black;
-    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
 }
 
 .fa-location-dot {
@@ -140,15 +147,51 @@ a {
 
 .search-bar button {
     text-align: center;
-    padding: 0 15px;
+    padding: 0 16px;
     background-color: #0065FC;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 18px;
     border: 1px solid #0065FC;
     box-sizing: border-box;
     height: 100%;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.filters-bar {
+    display: flex;
+    max-height: 50px;
+}
+
+.filters-bar li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid #F2F2F2;
+    padding: 14px 19px;
+    border-radius: 25px;
+    margin: 0 15px;
+}
+
+.filters-bar i {
+    padding-right: 10px;
+}
+
+.filters-bar li:hover {
+    background-color: #DEEBFF;
+}
+
+.fa-circle-info {
+    padding-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
