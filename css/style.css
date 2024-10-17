@@ -71,6 +71,7 @@ h4 {
 }
 
 /******** Header **********/
+/* nav */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -110,6 +111,7 @@ h4 {
     transform: translateY(-20px);
 }
 
+/* search-bar */
 .search-bar {
     display: flex;
     margin: 30px 0;
@@ -121,7 +123,7 @@ h4 {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    border: 1px solid #F2F2F2;
+    border: none;
     border-right: 0;
     border-left: 0;
     outline: none;
@@ -139,7 +141,27 @@ h4 {
     border-radius: 15px 0 0 15px;
     color: black;
     box-sizing: border-box;
+    position: relative;
 }
+
+.location-icon::after {
+    content:"";
+    width: 245px;
+    height: 1px;
+    position: absolute;
+    background: #F2F2F2;
+    transform: translateY(-15px);
+}
+
+.location-icon::before {
+    content:"";
+    width: 270px;
+    height: 1px;
+    position: absolute;
+    background: #F2F2F2;
+    transform: translateY(33px);
+}
+
 
 .fa-location-dot {
     color: black;
@@ -156,8 +178,19 @@ h4 {
     border: 1px solid #0065FC;
     box-sizing: border-box;
     height: 100%;
+    z-index: 10;
 }
 
+#button-icon i {
+    color:#F2F2F2;
+}
+
+#button-icon {
+    border-radius: 15px;
+    display: none;
+}
+
+/* filters */
 .filters {
     display: flex;
     align-items: center;
@@ -190,8 +223,17 @@ h4 {
     background-color: #DEEBFF;
 }
 
-.fa-circle-info {
-    padding-right: 10px;
+/* info-bar */
+.infobar {
+    display: flex;
+    align-items: center;
+}
+
+.infobar img {
+    border: 1px solid #D9D9D9;
+    padding: 7px 10px;
+    border-radius: 25px;
+    margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
