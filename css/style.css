@@ -130,6 +130,7 @@ h4, input, button {
 
 .search-bar input::placeholder, .fa-location-dot {
     color: black;
+    opacity: 1;
 }
 
 .location-icon {
@@ -242,7 +243,7 @@ h4, input, button {
 
 .hebergements-cards .card {
     margin-top: 33px;
-    height: 207.25px;
+    min-height: 207.25px;
 }
 
 .hebergements-cards img {
@@ -306,6 +307,7 @@ h4, input, button {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -452,7 +454,7 @@ footer li {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
     .main-container {
         padding: 0;
     }
@@ -500,7 +502,7 @@ footer li {
 
     .search-bar {
         justify-content: center;
-        min-width: 320px;
+        max-width: 335px;
     }
 
     .search-bar input {
@@ -595,5 +597,6 @@ footer li {
     footer div {
         padding-top: 15px;
         padding-left: 30px;
+        box-sizing: border-box;
     }
 }
