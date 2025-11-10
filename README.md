@@ -38,10 +38,16 @@ A modern web browser (Chrome, Firefox, Safari, etc.)
 
 ### Installation
 
-Clone the repository:
+1. Clone the repository:
+
+   ```bash
+    git clone https://github.com/Julie-Des/Booki
+    ```
+
+2.  Navigate to the project directory:
 
     ```bash
-    git clone https://github.com/Julie-Des/Booki
+    cd Booki
     ```
 
 ### Running Locally
